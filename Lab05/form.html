@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Schedule Meeting</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<h1>Schedule Meeting</h1>
+
+<form method="GET">
+    <legend>Personal Information</legend>
+
+    <div>
+        <label>Name:</label>
+        <input type="text" name="name">
+    </div>
+
+    <div>
+        <label>Email:</label>
+        <input type="email" name="email">
+    </div>
+
+    <div>
+        <label>City:</label>
+        <select name="where">
+            <option>Select your city</option>
+            <option>Islamabad</option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+            <option>Peshawar</option>
+            <option>Quetta</option>
+            <option>Sakardu</option>
+        </select>
+    </div>
+    <div>
+        <label>Province:</label>
+        <input type="radio" name="where" value="1" checked >Federal<br/>
+        <input type="radio" name="where" value="2">Punjab<br/>
+        <input type="radio" name="where" value="3">Sindh<br/>
+        <input type="radio" name="where" value="4">Balochistan<br/>
+        <input type="radio" name="where" value="5">KPK<br/>
+        <input type="radio" name="where" value="6">Gilgit Baltistan<br/>
+    </div>
+    <div>
+        <label>Date:</label>
+        <input type="date"  />
+    </div>
+    <div>
+        <label>Time:</label>
+        <input type="time" />
+    </div>
+    <input type="submit" />
+    </fieldset>
+</form>
+
+</html>
