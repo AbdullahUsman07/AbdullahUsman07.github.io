@@ -61,7 +61,7 @@ p {
 
 ul {
     list-style-type: square;
-    margin-left: 30px;
+    margin: 0;
     color: rgb(255, 240, 221);
 }
 
