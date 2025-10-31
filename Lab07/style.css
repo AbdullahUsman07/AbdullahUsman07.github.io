@@ -1,0 +1,240 @@
+
+
+
+body {
+    font-family: Arial;
+    background-color: rgb(87, 86, 79); 
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 240, 221); 
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.details-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px 50px;
+    padding: 10px;
+}
+header {
+    text-align: center;
+    background-color: rgb(87, 86, 79); 
+    padding: 20px;
+    border-bottom: 3px solid rgb(209, 211, 212); 
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: rgb(209, 211, 212); 
+}
+
+header h2 {
+    color: rgb(209, 211, 212);
+    font-weight: normal;
+}
+
+
+main {
+    width: 95%;
+    margin: 20px auto;
+    background-color: rgb(68, 67, 61); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.start{
+    display:flex;
+    flex-direction: row;
+    /* allow items to wrap on narrow screens */
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: start;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(209, 211, 212); 
+}
+
+.start h1{
+    margin-bottom: -26px;
+}
+
+.start img{
+    border-radius: 20px;
+    /* make profile image responsive */
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.start div{
+    padding-left: 20px;
+    /* allow text block to take remaining space and wrap under image when needed */
+    flex: 1 1 200px;
+}
+
+
+section h2 {
+    color: rgb(209, 211, 212);
+    font-variant: small-caps; 
+    font-size: 1.5em;
+}
+
+
+p {
+    margin: 10px 0;
+    color: rgb(255, 240, 221);
+}
+
+
+ul {
+    list-style-type: square;
+    margin: 0;
+    color: rgb(255, 240, 221);
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+a {
+    color: rgb(209, 211, 212);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+footer {
+    background-color: rgb(87, 86, 79);
+    color: rgb(209, 211, 212);
+    padding: 20px;
+    border-top: 2px solid rgb(209, 211, 212);
+}
+
+
+footer a {
+    color: rgb(255, 240, 221);
+}
+
+
+footer a:hover {
+    color: black;
+}
+
+
+
+table{
+    width: 100%;
+}
+
+
+.headingrow{
+    background-color: rgb(87, 86, 79);
+    color: rgb(255, 240, 221);
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tbody tr:hover{
+    background-color: rgb(87, 86, 79);
+}
+
+nav{
+    background-color: rgb(68, 67, 61);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #d1d3d4;
+}
+
+
+
+#navbar>ul>li{
+    list-style: none;
+    margin: 0;
+}
+
+#navbar{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cards-container div {
+    background-color:rgb(68, 67, 61) ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* Responsiveness */
+
+
+
+@media (max-width: 1024px) {
+    .details-grid{
+        grid-template-columns: auto auto;
+    }
+
+    .cards-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #table td:nth-child(2),
+    #table th:nth-child(2),
+    #table th:nth-child(4), 
+    #table td:nth-child(6),
+    #table th:nth-child(6),
+    #table td:nth-child(6),
+    #table td:nth-child(7){
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .details-grid{
+        grid-template-columns: auto;
+    }
+
+    .cards-container{
+        grid-template-columns: 1fr;
+    }
+
+    #table td:nth-child(2),
+    #table th:nth-child(2),
+    #table th:nth-child(4), 
+    #table td:nth-child(6),
+    #table th:nth-child(6),
+    #table td:nth-child(6),
+    #table td:nth-child(7){
+        display: none;
+    }
+    
+}
